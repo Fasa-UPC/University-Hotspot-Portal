@@ -16,7 +16,7 @@ btn.addEventListener("click" , function(){
         svg.setAttribute("src" , "../src/Moon Stars.svg");
         isdark = false;
     }else{
-        logo.setAttribute("src" , "../src/AvalGraphic.com-Fasa-University-light.svg");
+        logo.setAttribute("src" , "../src/FasaUniLogo1.svg");
         git.setAttribute("src" , "../src/Social Icons git hub-dark.svg");
         svg.setAttribute("src" , "../src/Sun.svg");
         isdark = true

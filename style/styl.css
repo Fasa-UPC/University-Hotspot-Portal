@@ -113,6 +113,7 @@
     width: 280px;
     height: 35px;
     border-radius: 8px;
+    padding: 0 10px;
     font-family: Vazismatn;
     border: 2px solid var(--input-border);
     background-color: var(--input-color);
@@ -192,7 +193,7 @@
 
 .h3{
     width: fit-content;
-    margin-top: 200px ;
+    margin-top: 80px ;
     color: var(--text-color);
 }
 .footer{
