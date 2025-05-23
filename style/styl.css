@@ -15,7 +15,7 @@
     --text-color: #000;
     --input-color:#fff;
     --input-border: #D1D5DB;
-
+    ----lebal-text: #fff;
 }
 
 :root.dark {
@@ -28,6 +28,7 @@
     --text-color:#F1F5F9;
     --input-color:#334155;
     --input-border:#475569;
+    --lebal-text: #2b374b;
 }
 
 .dark-mode{
@@ -63,7 +64,7 @@
 
 .form-con{
     width: 400px;
-    height: 370px;
+    height: fit-content;
     background-color: var(--form-color);
     padding: 10px 20px;
     border-radius: 12px;
@@ -91,7 +92,11 @@
     font-weight: 500;
     line-height: normal;
     color: var(--text-color);
+    transition:all 0.01s ease;
+    transform: translateY(10%);
+    padding: 0 4px;
 }
+
 
 .p-form{
     font-size: 12px;
@@ -100,23 +105,43 @@
     line-height: normal;
     color: var(--text-color);
 }
+.input-groups{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
 
 .input-group{
-    width: 390px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
 }
 
 .input-box{
-    width: 280px;
-    height: 35px;
-    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+    /* border-radius: 8px; */
+    /* margin: 0 20px; */
     padding: 0 10px;
+    color: #000000;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    opacity: 60%;
     font-family: Vazismatn;
-    border: 2px solid var(--input-border);
+    border: 3px solid var(--input-border);
     background-color: var(--input-color);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    outline: none;
+   
+}
+.input-box:focus{
+    border: 3px solid black;
 }
 
 .login-bt{
@@ -147,7 +172,7 @@
 
 .bt-contaner{
     display: flex;
-    width: 440px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     align-self: stretch;
@@ -215,15 +240,15 @@
 }
 @media only screen and (max-width: 745px){
     .container{
-        width: full;
-        height: full;
+        width: fit-content;
+        height: fit-content;
     }
     .form-con{
         width: 355px;
         height: fit-content;
     }
     .bt-contaner{
-        width: 395px;
+        width: fit-content;
     }
     .h1{
         font-size: 20px;
@@ -235,10 +260,10 @@
         margin-top: 260px;
     }
     .input-group{
-        width: 315px;
+        width: 90%;
     }
     .input-box{
-        width: 240px;
+        width: 100%;
     }
     .bt-text{
         font-size: 9px;
@@ -246,6 +271,10 @@
 }
 
 @media only screen and (max-width: 441px){
+    .form-con{
+        width: 80%;
+        height: fit-content;
+    }
     .h1{
         font-size: 16px;
     }
@@ -256,7 +285,7 @@
         flex-direction: column;
     }
     .bt-contaner{
-        width: 220px;
+        width: 100%;
         margin:0 auto;
     }
     .internet-bt .giud-bt{
