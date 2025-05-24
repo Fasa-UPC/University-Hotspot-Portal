@@ -15,7 +15,8 @@
     --text-color: #000;
     --input-color:#fff;
     --input-border: #D1D5DB;
-    ----lebal-text: #fff;
+    --lebal-text: #fff;
+    --text-placeholder: #616161 ;
 }
 
 :root.dark {
@@ -29,6 +30,7 @@
     --input-color:#334155;
     --input-border:#475569;
     --lebal-text: #2b374b;
+    --text-placeholder: #EEEEEE;
 }
 
 .dark-mode{
@@ -37,8 +39,12 @@
     border: 0;
     padding: 8px 12px;
     box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 400ms ease;
 }
-
+.dark-mode:hover{
+    background: #226ee8;
+}
 .font{
     font-family: Vazirmatn;
 }
@@ -58,8 +64,7 @@
 }
 
 .logo{
-    width: 245px;
-    height: 285px;
+    width: 200px;
 }
 
 .form-con{
@@ -140,6 +145,9 @@
     outline: none;
    
 }
+::placeholder{
+    color: var(--text-placeholder);
+}
 .input-box:focus{
     border: 3px solid black;
 }
@@ -157,6 +165,10 @@
     border-radius: 6px;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 400ms ease;
+}
+.login-bt:hover{
+    background: #226ee8;
 }
 
 .login-text{
@@ -187,7 +199,7 @@
 }
 .bt-text{
     color: #FFF;
-    font-size: 11px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -197,26 +209,34 @@
     display: flex;
     padding: 0 12px;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     border: 0;
     border-radius: 8px;
     font-family: Vazirmatn;
     background: #F6AE3B;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+    transition: all 400ms ease;
+}
+.internet-bt:hover{
+    background: #f4a21e;
 }
 
 .giud-bt{
     display: flex;
     padding: 0 12px;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     border: 0;
     border-radius: 8px;
     font-family: Vazirmatn;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+    transition: all 400ms ease;
+}
+.giud-bt:hover{
+    background: #226ee8;
 }
 
 .upc-link {
@@ -251,6 +271,9 @@
 */
 
 @media only screen and (max-width: 745px){
+    .logo{
+        width: 150px;
+    }
     .container{
         width: fit-content;
         height: fit-content;
@@ -278,11 +301,12 @@
         width: 100%;
     }
     .bt-text{
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 441px){
+    
     .form-con{
         width: 80%;
         height: fit-content;
@@ -294,7 +318,8 @@
         font-size: 14px;
     }
     .bt-contaner{
-        flex-direction: column;
+        flex-direction: row;
+        gap: 12px;
     }
     .bt-contaner{
         width: 100%;
@@ -304,6 +329,9 @@
         width: 100%;
         padding: 0;
         margin: 0;
+    }
+    .bt-text{
+        font-size: 12px;
     }
 }
 
