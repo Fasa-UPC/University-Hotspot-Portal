@@ -43,6 +43,7 @@
     box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: all 400ms ease;
+    position: fixed;
 }
 .dark-mode:hover{
     background: #226ee8;
