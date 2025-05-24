@@ -1,5 +1,5 @@
 @font-face{
-    font-family: Vazismatn ;
+    font-family: Vazirmatn ;
     src: url(../src/font/Vazirmatn-VariableFont_wght.ttf) format(truetype);
     
 }
@@ -40,7 +40,7 @@
 }
 
 .font{
-    font-family: Vazismatn;
+    font-family: Vazirmatn;
 }
 .bg-light{
     background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
@@ -132,7 +132,7 @@
     border-radius: 8px;
     font-size: 18px;
     opacity: 60%;
-    font-family: Vazismatn;
+    font-family: Vazirmatn;
     border: 3px solid var(--input-border);
     background-color: var(--input-color);
     -webkit-transition: 0.5s ease;
@@ -153,7 +153,7 @@
     align-items: center;
     gap: 16px;
     border: 0;
-    font-family: Vazismatn;
+    font-family: Vazirmatn;
     border-radius: 6px;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -200,7 +200,7 @@
     gap: 12px;
     border: 0;
     border-radius: 8px;
-    font-family: Vazismatn;
+    font-family: Vazirmatn;
     background: #F6AE3B;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
@@ -213,7 +213,7 @@
     gap: 12px;
     border: 0;
     border-radius: 8px;
-    font-family: Vazismatn;
+    font-family: Vazirmatn;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
