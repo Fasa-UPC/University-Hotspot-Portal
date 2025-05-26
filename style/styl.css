@@ -53,21 +53,24 @@
 }
 .bg-light{
     background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
-    
+    height: 100vh;
+    overflow: hidden;
     
 }
 .container{
-    width: full;
+    width: 100vw;
     margin: 20px auto;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items: center;
     gap : 20px;
+    
 }
 
 .logo{
     width: 200px;
+    margin-top: 1rem;
 }
 
 .form-con{
@@ -223,6 +226,7 @@
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     transition: all 400ms ease;
+    height: 2.5rem;
 }
 .internet-bt:hover{
     background: #f4a21e;
@@ -240,6 +244,7 @@
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     transition: all 400ms ease;
+    height: 2.5rem;
 }
 .giud-bt:hover{
     background: #226ee8;
@@ -252,8 +257,9 @@
 
 .h3{
     width: fit-content;
-    margin-top: 80px ;
     color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
 }
 .footer{
     width: fit-content;
@@ -296,9 +302,6 @@
     }
     .h2{
         font-size: 16px;
-    }
-    .h3{
-        margin-top: 260px;
     }
     .input-group{
         width: 98%;
