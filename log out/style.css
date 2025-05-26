@@ -1,0 +1,84 @@
+@font-face{
+    font-family: Vazirmatn ;
+    src: url(../src/font/Vazirmatn-VariableFont_wght.ttf) format(truetype);
+    
+}
+:root{
+    --fg-color1:  #F3F4F6;
+    --fg-color2:  #D9E8F5;
+}
+:root.dark{
+    --fg-color1: #1B263B;
+    --fg-color2: #0D1117;
+}
+*{
+    font-family: Vazirmatn;
+}
+.bg{
+    background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
+}
+.container{
+    width: 40%;
+    height: 100vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    box-shadow: 2px 2px 10px 0px #0D1117;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000 ;
+}
+.login{
+    margin: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bt-login{
+    width: 50%;
+    font-size: 16px;
+    padding: 8px 0 ;
+    border-radius: 8px;
+    background: #3B82F6;
+    border: none;
+    box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.bt-login:hover{
+    background: #226ee8;
+}
+@media only screen and (max-width: 745px){
+    .container{
+        width: 50%;
+    }
+    .h1{
+        font-size: 24px;
+    }
+    .h3{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 441px ) {
+    .container{
+        width: 70%;
+    }
+    .h1{
+        font-size: 18px;    
+    }
+    .h3{
+        font-size: 12px;
+    }
+}
