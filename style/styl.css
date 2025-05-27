@@ -70,7 +70,9 @@
 
 .logo{
     width: 200px;
+    height: 200px;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .form-con{
@@ -199,6 +201,7 @@
     align-items: center;
     align-self: stretch;
     margin: 10px auto ;
+    margin-bottom: 1rem;
     gap: 24px;
 }
 
@@ -285,6 +288,7 @@
 @media only screen and (max-width: 745px){
     .logo{
         width: 150px;
+        height: 150px;
     }
     .container{
         width: fit-content;
