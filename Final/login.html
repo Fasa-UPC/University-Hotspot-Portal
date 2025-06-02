@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به شبکه اینترنت دانشگاه</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body class="bg-light font">
+
+    <!-- ========== CHAP Hidden Auto Submit ========== -->
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+    </script>
+    $(endif)
+    <!-- ========== CHAP Hidden End ========== -->
+
+    <button type="button" class="dark-mode"  onclick="toggleTheme()">
+        <img class="them-svg" src="src/moon_stars.svg" alt="">
+    </button>
+    <div class="ie-fixMinHeight">
+        <div class="container">
+            <img class="logo" src="src/AvalGraphic.com-Fasa-University.svg" alt="لوگو دانشگاه" />
+            <div class="wrap animated fadeIn">
+                <form name="login" class="form-con flex-form" action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+
+                    <h1 class="h1">ورود به شبکه اینترنت دانشگاه</h1>
+
+                    <p class="info $(if error)alert$(endif)">
+                        $(if error == "")
+                            لطفاً برای استفاده از اینترنت دانشگاه وارد شوید.
+                        $(endif)
+                        $(if error)
+                            $(error)
+                        $(endif)
+                    </p>
+                    
+                    <section class="input-groups">
+                        <div class="input-group">
+                            <input class="input-box" name="username" type="text" value="$(username)" placeholder="" dir="rtl" required />
+                            <label for="username" class="placeholder-label">نام کاربری / شماره دانشجویی</label>
+                        </div>
+                        <div class="input-group">
+                            <input class="input-box" name="password" type="password" placeholder="" dir="rtl" required />
+                            <label for="password" class="placeholder-label">رمز عبور</label>
+                        </div>
+                    </section>
+                    <button class="login-bt" type="submit">
+                        <span class="login-text">ورود</span>
+                        <img class="login-svg" src="src/login.svg" alt="" />
+                    </button>
+                    <p class="p-form">* نام کاربری و رمز عبور پیش‌فرض، شماره دانشجویی و کد ملی می‌باشد.</p>
+                    
+                    <div class="bt-contaner">
+                        <a class="internet-bt" href="https://account.fasau.ac.ir/" target="_blank">
+                            <img class="bt-svg" src="src/wifi.svg" alt="" />
+                            <p class="bt-text">حجم باقی مانده</p>
+                        </a>
+                        <a class="giud-bt" href="https://fasau.ac.ir/fa/page/469/%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4%D9%80%DA%AF%D8%A7%D9%87" target="_blank">
+                            <img class="bt-svg" src="src/translation.svg" alt="" />
+                            <p class="bt-text">راهنمای اتصال</p>
+                        </a>
+                    </div>
+                </form>
+                <div class="footer">
+                    <span>
+                        <h3 class="h3">
+                            طراحی شده توسط
+                            <a class="upc-link" href="https://github.com/orgs/Fasa-UPC/" target="_blank">کمیته برنامه‌نویسی دانشگاه فسا</a>
+                        </h3>
+                        <img src="" alt="" />
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/theme.js"></script>
+</body>
+</html>
