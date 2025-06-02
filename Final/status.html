@@ -54,8 +54,8 @@
         </table>
         <!-- دکمه خروج فقط اگر ورود با مک نبود -->
         $(if login-by-mac != 'yes')
-        <form action="$(link-logout)" method="post" style="margin-top: 1.5rem;">
-            <button type="submit" class="logout-bt">خروج</button>
+        <form class="form-bt" action="$(link-logout)" method="post">
+            <button type="submit" class="logout-bt" >خروج</button>
         </form>
         $(endif)
         <div style="text-align:center; margin-top:32px; font-size: 0.9rem; color:#777;">

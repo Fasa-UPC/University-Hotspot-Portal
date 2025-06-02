@@ -44,6 +44,9 @@
     padding: 4px 8px;
     white-space: nowrap;
 }
+.form-bt{
+    width: 100%;
+}
 .logout-bt{
     width: 50%;
     color: #fff;
