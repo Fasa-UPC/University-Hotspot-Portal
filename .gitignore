@@ -1,2 +1,53 @@
-.vscode
-.gitignore
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore log and cache files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore environment configs
+.env
+config.php
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Node.js or PHP dependency folders (if applicable)
+node_modules/
+vendor/
+
+# Ignore build outputs (if any)
+dist/
+build/
+out/
+
+# Ignore compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore upload/test assets
+uploads/
+test/
+
+# For deployment leftovers
+*.old
+*.orig
+*.save
+*.backup
+
+# MikroTik-specific: if you're generating export files
+*.rsc
+*.backup
+*.autosave
+
+# Ignore database exports if any
+*.sql
+*.sqlite
+*.db
