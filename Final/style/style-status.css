@@ -46,6 +46,8 @@
 }
 .form-bt{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .logout-bt{
     width: 50%;
