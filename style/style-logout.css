@@ -66,6 +66,9 @@
 .bt-login:hover{
     background: #226ee8;
 }
+.link{
+    color: blue;
+}
 @media only screen and (max-width: 745px){
     .container{
         width: 50%;
