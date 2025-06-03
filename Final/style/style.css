@@ -104,7 +104,9 @@
     transform: translateY(10%);
     padding: 0 4px;
 } */
-
+.error{
+    color: red;
+}
 
 .p-form{
     font-size: 12px;
