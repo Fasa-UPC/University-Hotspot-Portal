@@ -65,9 +65,14 @@ MIT License
 ## 📝 About
 
 Developed by the Programming Committee for Fasa University.  
+<p align=center>
+ We appreciate all people who are participating in this project. Some people here and many more outside of Github. It means a lot to us. ♥
+ </p>
+<p align=center> 
 <a href="https://github.com/Fasa-UPC/University-Hotspot-Portal/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Fasa-UPC/University-Hotspot-Portal" />
 </a>
+</p>
 
 ---
 
