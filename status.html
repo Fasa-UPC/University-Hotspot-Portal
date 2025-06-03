@@ -11,9 +11,8 @@
 </head>
 <body class="bg">
     <div class="container">
-        <!-- نام کاربر یا یوزرنیم، اگر trial بود "کاربر آزمایشی" نمایش داده شود -->
         <h1 class="h1">
-            خوش آمدی
+            خوش آمدید
             <span>
             $(if login-by == 'trial')
                 کاربر آزمایشی!
@@ -34,7 +33,7 @@
             <tr>
                 $(if session-time-left)
                 <td class="td">مدت اتصال / زمان باقی‌مانده</td>
-                <td class="td">$(uptime) / $(session-time-left)</td>
+                <td class="td" dir="ltr">$(uptime) / $(session-time-left)</td>
                 $(else)
                 <td class="td">مدت اتصال</td>
                 <td class="td">$(uptime)</td>
