@@ -69,6 +69,24 @@
 .link{
     color: blue;
 }
+
+.upc-link {
+    color: #3B82F6;
+    text-decoration: none;
+    transition: all 400ms ease;
+}
+
+.upc-link:hover {
+    color: #1764e0;
+}
+
+.footer {
+    text-align:center;
+    margin-top:32px;
+    font-size: 0.9rem;
+    color:#777;
+}
+
 @media only screen and (max-width: 745px){
     .container{
         width: 50%;
