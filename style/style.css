@@ -91,7 +91,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color:var(--text-color)
+    color:var(--text-color);
 }
 
 /* .h2{
@@ -115,6 +115,11 @@
     line-height: normal;
     color: var(--text-color);
 }
+
+.info{
+    color: var(--text-color);
+}
+
 .input-groups{
     width: 100%;
     display: flex;
