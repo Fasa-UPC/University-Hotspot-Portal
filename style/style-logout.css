@@ -1,23 +1,25 @@
-@font-face{
+@font-face {
     font-family: Vazirmatn ;
     src: url(../src/font/Vazirmatn-VariableFont_wght.ttf) format(truetype);
-    
 }
-:root{
+:root {
     --fg-color1:  #F3F4F6;
     --fg-color2:  #D9E8F5;
 }
-:root.dark{
+:root.dark {
     --fg-color1: #1B263B;
     --fg-color2: #0D1117;
 }
-*{
+
+body {
+    background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
     font-family: Vazirmatn;
 }
-.bg{
-    background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
+button, input, select, textarea {
+  font-family: inherit;
 }
-.container{
+
+.container {
     width: 40%;
     height: 100vh;
     margin: 50px auto;
@@ -25,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.h1{
+.h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,23 +37,23 @@
     padding: 20px;
     border-radius: 10px;
 }
-.box{
+.box {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #000 ;
 }
-.login{
+.login {
     margin: 0 ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bt-container{
+.bt-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bt-login{
+.bt-login {
     width: 50%;
     color: #fff;
     font-size: 16px;
@@ -63,10 +65,10 @@
     cursor: pointer;
     transition: all 400ms ease;
 }
-.bt-login:hover{
+.bt-login:hover {
     background: #226ee8;
 }
-.link{
+.link {
     color: blue;
 }
 
@@ -87,7 +89,7 @@
     color:#777;
 }
 
-@media only screen and (max-width: 745px){
+@media only screen and (max-width: 745px) {
     .container{
         width: 50%;
     }

@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: Vazirmatn ;
     src: url(../src/font/Vazirmatn-VariableFont_wght.ttf) format(truetype);
 }
@@ -15,6 +15,9 @@ body {
     text-align: center;
     box-sizing: border-box;
     direction: rtl;
+}
+button, input, select, textarea {
+  font-family: inherit;
 }
 
 .container {

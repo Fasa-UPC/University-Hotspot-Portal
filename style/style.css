@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: Vazirmatn ;
     src: url(../src/font/Vazirmatn-VariableFont_wght.ttf) format(truetype);
 }
@@ -31,7 +31,7 @@
     --border-focus: #fff;
 }
 
-.dark-mode{
+.dark-mode {
     background: #3B82F6;
     border-radius: 10px;
     border: 0;
@@ -41,18 +41,22 @@
     transition: all 400ms ease;
     position: fixed;
 }
-.dark-mode:hover{
+.dark-mode:hover {
     background: #226ee8;
 }
-.font{
+
+body {
     font-family: Vazirmatn;
-}
-.bg-light{
     background: linear-gradient(180deg, var(--fg-color1) 0%, var(--fg-color2) 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
-.container{
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.container {
     width: 100vw;
     margin: 10px auto;
     display: flex;
@@ -62,14 +66,14 @@
     gap : 20px;
 }
 
-.logo{
+.logo {
     width: 200px;
     height: 200px;
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
 
-.form-con{
+.form-con {
     width: 400px;
     height: fit-content;
     background-color: var(--form-color);
@@ -77,7 +81,7 @@
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
-.flex-form{
+.flex-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +90,7 @@
     gap: 16px;
 }
 
-.h1{
+.h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -104,11 +108,12 @@
     transform: translateY(10%);
     padding: 0 4px;
 } */
-.error{
+
+.error {
     color: red;
 }
 
-.p-form{
+.p-form {
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -116,11 +121,11 @@
     color: var(--text-color);
 }
 
-.info{
+.info {
     color: var(--text-color);
 }
 
-.input-groups{
+.input-groups {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -129,7 +134,7 @@
     gap: 20px;
 }
 
-.input-group{
+.input-group {
     position: relative;
     width: 100%;
     display: flex;
@@ -137,7 +142,7 @@
     align-items: start;
 }
 
-.input-box{
+.input-box {
     width: 100%; 
     height: 50px;
     padding: 0 15px; 
@@ -145,7 +150,6 @@
     outline: none;
     border-radius: 8px;
     font-size: 18px;
-    font-family: Vazirmatn;
     border: 3px solid var(--input-border);
     background-color: var(--input-color);
     transition: border 0.3s ease, background-color 0.3s ease; 
@@ -155,7 +159,7 @@
 }
 
 
-.input-box:focus{
+.input-box:focus {
     border: 3px solid var(--border-focus);
 }
 
@@ -164,8 +168,7 @@
     right: 15px;
     top: 13px;
     color: var(--text-placeholder);
-    font-size: 16px; 
-    font-family: Vazirmatn;
+    font-size: 16px;
     pointer-events: none;
     transition: top 0.2s ease-in-out, right 0.2s ease-in-out, font-size 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background-color: transparent; 
@@ -183,7 +186,7 @@
 }
 
 
-.login-bt{
+.login-bt {
     cursor: pointer;
     display: flex;
     height: 48px;
@@ -193,30 +196,29 @@
     align-items: center;
     gap: 16px;
     border: 0;
-    font-family: Vazirmatn;
     border-radius: 6px;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     transition: all 400ms ease;
     box-sizing: border-box;
 }
-.login-bt:hover{
+.login-bt:hover {
     background: #226ee8;
 }
 
-.login-text{
+.login-text {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.login-svg{
+.login-svg {
     width: 20px;
     height: 20px;
 }
 
-.bt-contaner{
+.bt-contaner {
     display: flex;
     width: fit-content;
     justify-content: center;
@@ -227,11 +229,11 @@
     gap: 24px;
 }
 
-.bt-svg{
+.bt-svg {
     width: 24px;
     height: 24px;
 }
-.bt-text{
+.bt-text {
     color: #FFF;
     font-size: 12px;
     font-style: normal;
@@ -239,39 +241,37 @@
     line-height: normal;
 }
 
-.internet-bt{
+.internet-bt {
     display: flex;
     padding: 0 12px;
     align-items: center;
     gap: 6px;
     border: 0;
     border-radius: 8px;
-    font-family: Vazirmatn;
     background: #F6AE3B;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     transition: all 400ms ease;
     height: 2.5rem;
 }
-.internet-bt:hover{
+.internet-bt:hover {
     background: #f4a21e;
 }
 
-.giud-bt{
+.giud-bt {
     display: flex;
     padding: 0 12px;
     align-items: center;
     gap: 6px;
     border: 0;
     border-radius: 8px;
-    font-family: Vazirmatn;
     background: #3B82F6;
     box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     transition: all 400ms ease;
     height: 2.5rem;
 }
-.giud-bt:hover{
+.giud-bt:hover {
     background: #226ee8;
 }
 
@@ -280,13 +280,13 @@
     text-decoration: none;
 }
 
-.h3{
+.h3 {
     width: fit-content;
     color: var(--text-color);
     font-size: 1rem;
     margin: 0;
 }
-.footer{
+.footer {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -305,7 +305,7 @@
 }
 */
 
-@media only screen and (max-width: 745px){
+@media only screen and (max-width: 745px) {
     .logo{
         width: 150px;
         height: 150px;
@@ -338,7 +338,7 @@
     }
 }
 
-@media only screen and (max-width: 441px){
+@media only screen and (max-width: 441px) {
 
     .form-con{
         width: 80%;
