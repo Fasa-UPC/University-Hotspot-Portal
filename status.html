@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    $(if refresh-timeout)
-    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
-    $(endif)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وضعیت اتصال اینترنت دانشگاه</title>
@@ -14,49 +11,33 @@
         <h1 class="h1">
             خوش آمدید
             <span>
-            $(if login-by == 'trial')
                 کاربر آزمایشی!
-            $(elif login-by != 'mac')
-                $(username)!
-            $(endif)
             </span>
         </h1>
         <table class="table">
             <tr>
                 <td class="td">آی‌پی شما</td>
-                <td class="td">$(ip)</td>
+                <td class="td">127.0.0.1</td>
             </tr>
             <tr>
                 <td class="td">حجم آپلود / دانلود</td>
-                <td class="td" dir="ltr">$(bytes-in-nice) / $(bytes-out-nice)</td>
+                <td class="td" dir="ltr">1234 / 1234</td>
             </tr>
             <tr>
-                $(if session-time-left)
                 <td class="td">مدت اتصال / زمان باقی‌مانده</td>
-                <td class="td" dir="ltr">$(uptime) / $(session-time-left)</td>
-                $(else)
-                <td class="td">مدت اتصال</td>
-                <td class="td">$(uptime)</td>
-                $(endif)
+                <td class="td" dir="ltr">19:26:59 / 02:34:01</td>
             </tr>
-            $(if blocked == 'yes')
             <tr>
                 <td class="td">وضعیت</td>
-                <td class="td"><a href="$(link-advert)" target="hotspot_advert">نیازمند مشاهده تبلیغات</a></td>
+                <td class="td">متصل</td>
             </tr>
-            $(elif refresh-timeout)
-            <tr>
-                <td class="td">تازه‌سازی وضعیت</td>
-                <td class="td">$(refresh-timeout)</td>
-            </tr>
-            $(endif)
+
         </table>
-        <!-- دکمه خروج فقط اگر ورود با مک نبود -->
-        $(if login-by-mac != 'yes')
-        <form class="form-bt" action="$(link-logout)" method="post">
+
+        <form class="form-bt" name="logout" onSubmit="return openLogout()">
             <button type="submit" class="logout-bt" >خروج</button>
         </form>
-        $(endif)
+
         <footer class="footer">
             <span>
                 <h3 class="h3">
@@ -68,4 +49,12 @@
         </footer>
     </div>
 </body>
+
+<script>
+function openLogout() {
+  window.open('logout.html', '_blank');
+  return false;
+}
+</script>
+
 </html>
