@@ -17,7 +17,7 @@
         <div class="container">
             <img class="logo" src="src/AvalGraphic.com-Fasa-University.svg" alt="لوگو دانشگاه" />
             <div class="wrap animated fadeIn">
-                <form name="login" class="form-con flex-form" method="post">
+                <form name="login" class="form-con flex-form" method="post" onSubmit="return openStatus()">
 
                     <h1 class="h1">ورود به شبکه اینترنت دانشگاه</h1>
 
@@ -65,5 +65,13 @@
         </div>
     </div>
     <script src="scripts/theme.js"></script>
+
+    <script>
+    function openStatus() {
+    window.open('status.html', '_blank');
+    return false;
+    }
+    </script>
+
 </body>
 </html>
