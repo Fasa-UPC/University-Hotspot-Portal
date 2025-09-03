@@ -4,23 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="2; url=$(link-redirect)">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="-1">
     <title>Internet hotspot - Redirect</title>
     <link rel="stylesheet" href="style/style-alogin.css">
-    <script>
+
+    <!-- <script>
         function startClock() {
-            $(if popup == 'true')
-            open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
-        $(endif)
-        location.href = unescape('$(link-redirect-esc)');
+        open('./status.html', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+        location.href = unescape('./status.html');
         }
 
-    </script> 
+    </script>  -->
 </head>
 
-<body onLoad="startClock()">
+<!-- <body onLoad="startClock()"> -->
+
+<body>
     <div class="container">
         <div class="card">
             <div class="header">
@@ -29,7 +27,7 @@
             </div>
             <p class="message">شما با موفقیت وارد شدید.</p>
             <p class="redirect-info">
-                صفحه به زودی بسته خواهد شد. در غیر این صورت، <a href="$(link-redirect)" class="redirect-link">اینجا</a> کلیک کنید.
+                صفحه به زودی بسته خواهد شد. در غیر این صورت، <a href="status.html" class="redirect-link">اینجا</a> کلیک کنید.
             </p>
             <div class="loader"></div>
             <footer class="footer">
